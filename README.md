@@ -1,73 +1,146 @@
-# Welcome to your Lovable project
+# Modern Todo App ✨
 
-## Project info
+A beautiful, responsive todo application built with React, TypeScript, and Tailwind CSS, featuring a modern glass-morphism design with gradient accents and smooth animations.
 
-**URL**: https://lovable.dev/projects/3626033c-fdd4-43d9-836a-cf32826f4229
+## 🚀 Features
 
-## How can I edit this code?
+### Core Functionality
+- **Add, edit, and delete todos** - Full CRUD operations
+- **Priority levels** - Low, Medium, High priority with color coding
+- **Complete/incomplete todos** - Check off completed tasks
+- **Filter system** - View All, Active, or Completed todos
+- **Persistent storage** - Todos are saved to localStorage
+- **Statistics dashboard** - Real-time stats for total, active, and completed todos
 
-There are several ways of editing your application.
+### Design & UX
+- **Glass-morphism UI** - Modern frosted glass effect with backdrop blur
+- **Gradient accents** - Beautiful purple-to-pink gradients
+- **Smooth animations** - Fade-in and slide transitions
+- **Responsive design** - Works perfectly on all devices
+- **Dark theme optimized** - Designed for dark mode experience
+- **Interactive feedback** - Hover states and transitions
 
-**Use Lovable**
+## 🛠 Technical Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3626033c-fdd4-43d9-836a-cf32826f4229) and start prompting.
+- **Frontend Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: shadcn/ui component library
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **State Management**: React useState with localStorage persistence
+- **Form Handling**: Native React forms with validation
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📁 Project Structure
 
-**Use your preferred IDE**
+```
+src/
+├── components/
+│   ├── ui/                 # shadcn/ui components
+│   ├── TodoForm.tsx       # Add new todo form
+│   ├── TodoItem.tsx       # Individual todo item
+│   └── TodoList.tsx       # Main todo container
+├── pages/
+│   ├── Index.tsx          # Main page
+│   └── NotFound.tsx       # 404 page
+├── types/
+│   └── todo.ts           # TypeScript interfaces
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+└── index.css            # Global styles & design tokens
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎨 Design System
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Color Palette
+- **Primary**: Purple gradient (`266° 100% 70%` → `310° 100% 80%`)
+- **Success**: Green for completed items (`142° 76% 36%`)
+- **Warning**: Orange for medium priority (`38° 92% 50%`)
+- **Destructive**: Red for high priority and delete actions
 
-Follow these steps:
+### Design Tokens
+- Glass-morphism effects with `backdrop-blur-sm`
+- Custom shadows: `--todo-shadow`, `--todo-shadow-lg`
+- Smooth transitions: `cubic-bezier(0.4, 0, 0.2, 1)`
+- Responsive breakpoints following Tailwind standards
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ and npm installed
+- Modern web browser
+
+### Installation
+
+1. **Clone the repository**
+```bash
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. **Install dependencies**
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. **Start development server**
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. **Open your browser**
+Navigate to `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Building for Production
+```bash
+npm run build
+```
 
-**Use GitHub Codespaces**
+## 📱 Usage
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Add a Todo**: Type in the input field, select priority, and click "Add Todo"
+2. **Complete Todo**: Click the checkbox next to any todo
+3. **Delete Todo**: Hover over a todo and click the trash icon
+4. **Filter Todos**: Use All/Active/Completed buttons to filter view
+5. **Clear Completed**: Remove all completed todos at once
+6. **View Stats**: Monitor your progress with the stats cards
 
-## What technologies are used for this project?
+## 🎯 Future Enhancements
 
-This project is built with:
+- **Due dates and reminders**
+- **Categories and tags**
+- **Search and sort functionality**
+- **Export/import features**
+- **Drag and drop reordering**
+- **Dark/light mode toggle**
+- **Cloud synchronization**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🛠 Deployment
 
-## How can I deploy this project?
+### Via Lovable
+Simply open [Lovable](https://lovable.dev) and click on Share → Publish.
 
-Simply open [Lovable](https://lovable.dev/projects/3626033c-fdd4-43d9-836a-cf32826f4229) and click on Share -> Publish.
+### Via Other Platforms
+This is a standard Vite React app that can be deployed to:
+- Vercel
+- Netlify
+- GitHub Pages
+- Any static hosting service
 
-## Can I connect a custom domain to my Lovable project?
+## 🤝 Contributing
 
-Yes, you can!
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📄 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Built with [Lovable](https://lovable.dev) - AI-powered web development
+- UI components from [shadcn/ui](https://ui.shadcn.com)
+- Icons from [Lucide React](https://lucide.dev)
+- Styling with [Tailwind CSS](https://tailwindcss.com)
